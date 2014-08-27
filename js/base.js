@@ -5,3 +5,4 @@ function hello() {
   document.close();
 }
 hello();
+location.href = 'http://www.kuzuore.com/~kuzu/diary/?date=20140826#p02';
