@@ -5,11 +5,16 @@ function hello() {
   document.close();
 }
 function pict() {
-//  var img = '<img src="http://www.kuzuore.com/~kuzu/diary/images/20140822_01.png">'
-   var sumsrc = "http://192.168.9.24/thumbnail.cgi?/DCIM/108_0510/IMGP1887.JPG"
-   var img = '<img src="' + sumsrc + '">'
+  var sumsrc = "http://192.168.9.24/thumbnail.cgi?/DCIM/108_0510/IMGP1887.JPG"
+  var img = '<img src="' + sumsrc + '">'
   document.write(img);
 }
+function files() {
+  var pict = "http://192.168.9.24/command.cgi?op=100&DIR=/DCIM/108_0510";
+  var pictfiles = '<pre>' + pict + '</pre>'
+  document.write(pictfiles);
+}
+
+// files();
 hello();
-// location.href = 'http://www.kuzuore.com/~kuzu/diary/?date=20140826#p02';
 pict();
